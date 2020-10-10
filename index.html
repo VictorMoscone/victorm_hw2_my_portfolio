@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
     crossorigin="anonymous">
@@ -11,46 +11,56 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- My NavBar lives here. -->
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <a class="navbar-brand" href="#">Navbar</a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+  </nav>
 
-      </nav>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="card mt-5 p-3">
-              <div class="card-body">
-                <h5 class="card-title">About Me</h5>
-                <img src="https://place-hold.it/200x200" class="img-fluid float-left pull-left mr-2" alt="Victor Photo">
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At illum error, sequi quae laborum ratione voluptate, eligendi beatae iusto optio, ex quam tempore eius nemo consequatur illo cupiditate mollitia neque?
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis similique tenetur hic omnis eum labore. Ullam natus amet unde ipsum vel, assumenda atque possimus delectus ad dolore nostrum repudiandae quibusdam.
-                </p>
-              </div>
-            </div>
+  <div class="container">
+    <!-- The card that displays my about me lives here. -->
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card mt-5 p-3">
+          <div class="card-body">
+            <h5 class="card-title">About Me</h5>
+            <img src="https://place-hold.it/200x200" class="img-fluid float-left pull-left mr-2" alt="Victor Photo">
+            <p class="card-text">
+              <p>Hey there! Welcome to my page. My name is Victor Moscone. I'm a 28 year old (soon to be 29) dude living in the Central Valley, California.</p>
+              <p>I work full-time, remotely, for a real estate software platform. I've decided to pursue a career in web development as a career goal. </p>
+              <p>My hobbies include: Video Games, Manga, Anime, Game Design, Video Editing, and most importantly of all - <strong>BOARD GAMES!</strong></strong></p>
+              <p>You can visit my LinkedIn page <a href="https://www.linkedin.com/in/victor-moscone-bb270a85/" target=_blank>HERE!</a></p>
+            </p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="fixed-bottom">
+    Copyright Victor Moscone
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     
 </body>
 </html>
